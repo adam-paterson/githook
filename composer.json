@@ -3,7 +3,7 @@
     "description": "PHP Based git hooks",
     "require-dev": {
         "squizlabs/php_codesniffer": "^2.3",
-        "phpmd/phpmd": "^2.3",
+        "phpmd/phpmd": "2.3.2",
         "sebastian/phpcpd": "^2.0",
         "phpspec/nyan-formatters": "1.*",
         "phpspec/phpspec": "^2.3",
