@@ -25,9 +25,8 @@ class GitHookServiceProvider extends ServiceProvider
 
     public function bindConsoleClasses()
     {
-        $this->app->singleton('githook.console', function() {
+        $this->app->singleton('githook.console', function () {
             return new Console($this->app, new Dispatcher(), GitHook::VERSION);
         });
     }
-
 }
