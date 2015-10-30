@@ -1,5 +1,6 @@
 {
     "name": "adam-paterson/githook",
+    "description": "PHP Based git hooks",
     "require-dev": {
         "squizlabs/php_codesniffer": "^2.3",
         "phpmd/phpmd": "^2.3",
