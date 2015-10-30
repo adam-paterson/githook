@@ -2,11 +2,11 @@
     "name": "adam-paterson/githook",
     "require-dev": {
         "squizlabs/php_codesniffer": "^2.3",
-        "phpunit/phpunit": "^5.0",
         "phpmd/phpmd": "^2.3",
         "sebastian/phpcpd": "^2.0",
         "phpspec/nyan-formatters": "1.*",
-        "phpspec/phpspec": "^2.3"
+        "phpspec/phpspec": "^2.3",
+        "henrikbjorn/phpspec-code-coverage": "~1.0"
     },
     "license": "MIT",
     "authors": [
