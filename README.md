@@ -7,6 +7,7 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 [![Dependencies][ico-versioneye]][link-versioneye]
+[![SensioLabs][ico-sensiolabs]][link-sensiolabs]
 
 ## Install
 
