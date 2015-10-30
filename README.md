@@ -49,17 +49,17 @@ If you discover any security related issues, please email hello@adampaterson.co.
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/league/GitHook.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/adam-paterson/gitHook.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/thephpleague/GitHook/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/thephpleague/GitHook.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/thephpleague/GitHook.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/league/GitHook.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/adam-paterson/gitHook/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/adam-paterson/gitHook.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/adam-paterson/gitHook.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/adam-paterson/gitHook.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/league/GitHook
-[link-travis]: https://travis-ci.org/thephpleague/GitHook
-[link-scrutinizer]: https://scrutinizer-ci.com/g/thephpleague/GitHook/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/thephpleague/GitHook
-[link-downloads]: https://packagist.org/packages/league/GitHook
+[link-packagist]: https://packagist.org/packages/adam-paterson/gitHook
+[link-travis]: https://travis-ci.org/adam-paterson/gitHook
+[link-scrutinizer]: https://scrutinizer-ci.com/g/adam-paterson/gitHook/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/adam-paterson/gitHook
+[link-downloads]: https://packagist.org/packages/adam-paterson/gitHook
 [link-author]: https://github.com/adam-paterson
 [link-contributors]: ../../contributors
