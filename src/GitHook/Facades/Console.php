@@ -4,13 +4,28 @@ namespace GitHook\Facades;
 
 use GitHook\GitHookServiceProvider;
 use Illuminate\Container\Container;
-use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Facade;
 
+/**
+ * Class Console
+ * @author Adam Paterson <hello@adampaterson.co.uk>
+ *
+ * @package GitHook\Facades
+ */
 class Console extends Facade
 {
+    /**
+     * Facade accessor
+     *
+     * @var string
+     */
     protected static $accessor = 'githook.console';
 
+    /**
+     * Use GitHookServiceProvider to bind console to application
+     *
+     * @return string
+     */
     protected static function getFacadeAccessor()
     {
         if (!static::$app) {
