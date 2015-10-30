@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+
+<?php
+ini_set('display_errors', true);
+$vendors = array(
+    __DIR__.'/../vendor',
+    __DIR__.'/../../..'
+);
+
+foreach ($vendors as $vendor) {
+    $vendor .= '/autoload.php';
+
+    if (file_exists($vendor)) {
+            require_once $vendor;
+            break;
+        }
+}
+
+return GitHook\Facades\Console::run();
