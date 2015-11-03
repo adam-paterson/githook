@@ -2,6 +2,8 @@
 
 namespace GitHook\Services;
 
+use Dotenv\Dotenv;
+
 /**
  * Class Pathfinder
  * @author Adam Paterson <adamp@hello@adampaterson.co.uk
