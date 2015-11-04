@@ -25,8 +25,8 @@ class ConsoleSpec extends ObjectBehavior
         $this->getName()->shouldReturn('GitHook');
     }
 
-    function implements_some_class()
+    function it_has_application_description()
     {
-        $this->shouldImplement('Illuminate\Contracts\Console\Application');
+        $this->getLongVersion()->shouldReturn('<info>GitHook</info> version <comment>1.0.0</comment>');
     }
 }

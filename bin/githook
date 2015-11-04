@@ -16,4 +16,4 @@ foreach ($vendors as $vendor) {
         }
 }
 
-return GitHook\Facades\Console::run();
+return GitHook\Console\Console::run();
