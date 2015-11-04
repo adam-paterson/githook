@@ -20,13 +20,19 @@ class Pathfinder
      */
     public static function getUserHomeDirectory()
     {
-        if (!empty($_SERVER['HOME'])) {
-            return $_SERVER['HOME'];
-        } elseif (!empty($_SERVER['HOMEDRIVE']) && !empty($_SERVER['HOMEPATH'])) {
-            return $_SERVER['HOMEDRIVE'] . $_SERVER['HOMEPATH'];
-        } else {
+        if (!empty(getenv('HOMEDRIVE')) && !empty(getenv('HOMEPATH'))) {
+            $dir = getenv('HOMEDRIVE') . getenv('HOMEPATH');
+        }
+
+        if (!empty(getenv('HOME'))) {
+            $dir = getenv('HOME');
+        }
+
+        if (!isset($dir)) {
             throw new \Exception("Cannot determine user home directory.");
         }
+
+        return $dir;
     }
 
     /**
