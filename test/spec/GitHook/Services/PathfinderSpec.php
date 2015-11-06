@@ -2,17 +2,21 @@
 
 namespace spec\GitHook\Services;
 
+use GitHook\GitHookServiceProvider;
+use Illuminate\Container\Container;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
 class PathfinderSpec extends ObjectBehavior
 {
-    function it_is_initializable()
+    public function let(Container $container)
     {
-        $this->shouldHaveType('GitHook\Services\Pathfinder');
+        $this->beAnInstanceOf('GitHook\Services\Pathfinder');
+        $this->beConstructedWith($container);
+
     }
 
-    function it_should_retrieve_users_home_dir()
+    function it_should_retrieve_users_home_dir(Container $container)
     {
         putenv("HOME=/some/folder");
         $this->getUserHomeDirectory()->shouldEqual('/some/folder');

@@ -2,7 +2,7 @@
 
 namespace GitHook\Services;
 
-use Dotenv\Dotenv;
+use GitHook\Traits\DI;
 
 /**
  * Class Pathfinder
@@ -12,6 +12,8 @@ use Dotenv\Dotenv;
  */
 class Pathfinder
 {
+    use DI;
+
     /**
      * Get the user's home directory path.
      *
@@ -44,5 +46,12 @@ class Pathfinder
     public function getConfigurationDirectory()
     {
         return $this->getUserHomeDirectory().'/.githook';
+    }
+
+    public function getBasePath()
+    {
+        $base = $this->app['path.base'] ? $this->app['path.base'].'/' : '';
+
+        return $base;
     }
 }
