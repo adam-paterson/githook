@@ -1,6 +1,8 @@
 #!/usr/bin/env php
 
+
 <?php
+
 ini_set('display_errors', true);
 $vendors = array(
     __DIR__.'/../vendor',
@@ -16,4 +18,4 @@ foreach ($vendors as $vendor) {
         }
 }
 
-return GitHook\Console\Console::run();
+return GitHook\Facades\Console::run();

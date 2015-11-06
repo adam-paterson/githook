@@ -15,11 +15,6 @@ class ConsoleSpec extends ObjectBehavior
         $this->beConstructedWith($container, $dispatcher, $string);
     }
 
-    function it_is_initializable()
-    {
-        $this->shouldHaveType('Illuminate\Console\Application');
-    }
-
     function it_has_application_name()
     {
         $this->getName()->shouldReturn('GitHook');
