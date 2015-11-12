@@ -1,0 +1,34 @@
+{
+    "name": "gethooked/githooks",
+    "description": "PHP Based GitHooks",
+    "require": {
+        "php": ">=5.5.0",
+        "anahkiasen/rocketeer": "^2.2"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^2.3",
+        "sebastian/phpcpd": "^2.0",
+        "phpspec/nyan-formatters": "1.*",
+        "phpspec/phpspec": "^2.3",
+        "henrikbjorn/phpspec-code-coverage": "~1.0",
+        "scrutinizer/ocular": "^1.1",
+        "phpmd/phpmd": "^2.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adam Paterson",
+            "email": "hello@adampaterson.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "GitHooks\\": "src/GitHooks"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GitHooksTest\\": "tests/"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+$vendors = array(
+    __DIR__.'/../vendor',
+    __DIR__.'/../../..'
+);
+
+// Loop through the possible vendor folders and require the first
+// one available
+foreach ($vendors as $vendor) {
+    $vendor .= '/autoload.php';
+
+    if (file_exists($vendor)) {
+        require_once $vendor;
+        break;
+    }
+}
+
+return \GitHooks\Facades\Console::run();
